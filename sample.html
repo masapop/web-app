@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<mata charset="utf-8"/>
+<title>fabric test</title>
+</head>
+<body>
+テストでーす。
+<canvas id="canvas" width="300" height="300" style="border:1px solid;"></canvas>
+<script src="fabric.min.js"></script>
+<script>
+    var c = new fabric.Canvas('canvas');
+    var circle = new fabric.Circle({
+        left: 50,
+        top: 50,
+        fill: 'red',
+        radius: 30
+    });
+    c.add(circle);　
+</script>
+</body>
+</html>
