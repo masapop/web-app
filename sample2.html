@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<mata charset="utf-8"/>
+<title>fabric test</title>
+<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<canvas id="canvas" width="1036" height="664" style="border:1px solid;"></canvas>
+<script src="fabric.min.js"></script>
+<script>
+    var c = new fabric.Canvas('canvas');
+    var text = new fabric.IText("Hello world !", {
+        fontFamily: "Fredoka One",
+        top: 100,
+        left: 100,
+        fontSize: 20
+    });
+    c.add(text);
+    c.renderAll;
+</script>
+</body>
+</html>
